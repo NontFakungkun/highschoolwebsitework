@@ -1,0 +1,2 @@
+[21-Jun-2019 02:36:22 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/nontfakungkun/public_html/Pizza Plaza (AS91633)/custom_orders.php on line 65
+[21-Jun-2019 02:36:25 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/nontfakungkun/public_html/Pizza Plaza (AS91633)/custom_orders.php on line 65

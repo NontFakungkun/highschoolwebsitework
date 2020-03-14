@@ -1,0 +1,309 @@
+*{
+	margin:0;
+	border:0;
+	padding:0;
+}
+
+body {
+	
+	background: #c1b8b4;
+	font: 14px/20px Arial, San-Serif;
+	margin: 0;
+}
+body.background {
+	background-image: url('../Images/background.jpg');/* Set up background image */
+}
+
+.half-left {
+	float: left;
+	margin: 0 auto;
+	width: 50%;
+	height: auto;
+	padding: 4%;
+}                            /*  the half-left and half right class properties work together to rearrange content o a page to have 2 columns */
+
+.half-right {
+	float: right;
+	margin: 0 auto;
+	width: 35%;
+	height: auto;
+	padding: 3%;
+}
+
+.welcome{
+	text-align: center;
+	font: 18px Impact, San-Serif;
+	color: white;
+	font-size: 300%;
+	
+}
+.underline {
+	
+	width: 40%;
+	margin: 0 auto;
+	border-top: 4px solid #FFF;
+}
+/*  ==========Table========== */
+table {
+  border-collapse: collapse;
+  border: 2px solid black;
+  width: 100%;
+}
+th {
+  border-collapse: collapse;
+  border: 2px solid black;
+  padding: 15px;
+  font-size: 110%;
+}
+td {
+  border-collapse: collapse;
+  border: 1px solid black;
+  padding: 15px;
+  font-size: 100%;
+  text-align: center;
+}
+/*  Rearrange content in a page to be in 3 columns */
+.one-third {
+	width: 25%;
+	float: left;
+	margin: 2% 2%;
+	text-align: left;
+	padding-left: 20px;
+}
+.one-third table {
+	width: 80%;
+}
+.one-third th {
+  border-collapse: collapse;
+  border: 2px solid black;
+  padding: 8px;
+  font-size: 80%;
+}
+.one-third td {
+  border-collapse: collapse;
+  border: 1px solid black;
+  padding: 8px;
+  font-size: 70%;
+  text-align: center;
+}
+.menu-pic{
+	position: middle;
+	width: 300px;
+	height:100%;
+	padding: 30px 70px 30px 30px;
+
+}
+
+h1 {
+	text-align:center;
+	font-size: 180%;
+	line-height: 120%;
+	padding: 5%, 0;
+}	
+
+h2 {
+	text-decoration: underline;
+	line-height: 280%;
+	padding-left: 2%;
+}
+/*  Used for choice bar in index page */
+h4  {
+	font-size: 150%;
+	line-height: 180%;
+	padding: 2% 0;
+	border: 2px white solid;
+	text-align: center;
+	background-color: black;
+}
+ /* For responsiveness  */
+h4:hover{
+	font-size: 150%;
+	line-height: 180%;
+	padding: 2% 0;
+	border: 2px white solid;
+	background-color: lightgray;
+}
+/* Order tab displayed in index page */
+.order-tab {
+	width: 70%;
+	min-height: 70px;
+	margin: 5% auto;
+	border: 2px solid black;
+	font: 18px Impact, San-Serif;
+	background-color: #D3D3D3;
+}
+.order-text {
+	float: left;
+	width: 75%;
+	font-size: 155%;
+	font-weight: bold;
+	padding: 1%;
+	padding-top: 20px;
+	color: black;
+}
+
+.button-holder {
+	float: right;
+	width: 17%;
+	padding: 1%;
+	margin-bottom: 6%;
+}
+.order-button {
+	float: left;
+	text-align: center;
+	border-radius: 8px;
+	color: #FFFFFF;
+	font-size: 150%;
+	background: #32CD32;
+	padding: 10px 23px 10px 23px;
+	font-weight: bold;
+	text-decoration: none;
+}
+/*  Responsive: the order tab adjust to the changing screen */
+@media screen and (max-width:1330px) {
+  .order-button {display: none;}
+  .order-text {float: none;}
+}
+.order-button:hover {
+	background: #228B22;
+	text-decoration: none;
+}
+
+.warp{
+	font: 18px Impact, San-Serif;
+	color: #FFF;
+}
+.warp img{
+	height: 100%px;
+	width: 100%;
+}
+img {
+	text-align: center;
+	max-width: 110%;
+	height: auto;
+	width: auto;
+}
+
+header {
+	background: #9f9289;
+	font: 18px Impact, San-Serif;
+	width: 100%;
+	height: 100px;
+	position: fixed;
+	top:0;
+	left:0;
+	z-index: 100;
+	opacity: 0.90;	
+}
+	
+#logo {
+	height: 70px;
+	width: 70px; 
+	margin: 20px;
+	float: left;
+}
+	/*  Responsive: navigating bar responds to smaller screen by condensing into a vertical list instead */
+@media screen and (max-width:1350px) {
+  .navbar a:not(:first-child) {display: none;}
+  .navbar a.icon {
+    float: right;
+    display: block;
+  }
+}
+@media screen and (max-width: 1350px) {
+  .navbar.responsive {position: relative;}
+  .navbar.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .navbar.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+	background-color: #9f9289;
+	margin-top: none;
+  }
+
+}
+
+/*  Navigating bar fit on the top right of the pages */
+.navbar {
+	float: right;
+	padding: 0px 20px 50px 0px; /*top, right, bottom, left*/
+}
+
+.navbar a {
+	list-style: none;
+	display: inline-block;
+	float: left;
+	padding: 10px 10px 10px 10px;
+	margin-top: 25px;
+	text-align: center;
+	text-decoration: none;
+}
+
+a {
+	color: #FFF;
+	text-decoration: none;
+}
+
+ /* For responsiveness  */
+ 
+.navbar a:hover {
+	color: #FFF;
+	background-color: coral;
+}
+
+
+.title{
+	color: #FFF;
+	font-size: 230%;
+	float: left;
+	padding: 24px 0px 0px 0px;
+	text-decoration: overline underline;
+}
+.title2{
+	color: #FFF;
+	font-size: 250%;
+	text-decoration: overline underline;
+	text-align: center;
+	padding-top: 30px;
+}
+.current {
+	background-color: coral;
+}
+
+
+
+
+.clear {
+	clear: both;
+}
+.middle {
+	float: center;
+	text-align:center;
+	margin-bottom: 5%;
+}
+/* Fixed partly transparent footer with black background */
+footer {
+	background: #333333;
+	font: 14px/20px Arial, San-Serif;
+	width: 100%;
+	color: white;
+	text-align: center;
+	overflow: hidden;
+	opacity: 0.70;
+	position:fixed;
+	bottom:0;
+	left:0;
+}
+
+
+}
+footer.second {
+	border-top: 1px solid #4D4E50;
+	background-color: #333333;
+	max-height: 50px;
+	text-align: center;
+	opacity: 0.95;
